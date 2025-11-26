@@ -8,8 +8,8 @@ namespace examen_backend2.Controllers;
 [Route("api/[controller]")]
 public class ReportController : ControllerBase
 {
-    private const string ClientesEndpoint = "Clientes/Listar";
-    private const string CreditosEndpoint = "Creditos/Listar";
+    private const string ClientesEndpoint = "https://programacionweb2examen3-production.up.railway.app/api/Clientes/Listar";
+    private const string CreditosEndpoint = "https://programacionweb2examen3-production.up.railway.app/api/Creditos/Listar";
 
     private readonly IHttpClientFactory _httpClientFactory;
     private readonly ILogger<ReportController> _logger;
